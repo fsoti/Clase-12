@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Clase 12</title>
+        <link rel="icon" type="image/png" href="https://www.iconpacks.net/icons/2/free-movie-icon-2802-thumb.png" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
         <link
             rel="stylesheet"
@@ -16,6 +17,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet" />
         <style>
+            :root {
+                --bs-font-sans-serif: "Poetsen One", sans-serif;
+                --bs-light-rgb: 204, 204, 255;                                                   
+            }
+
             body {
                 font-family: "Poetsen One", sans-serif;
                 font-weight: 400;
@@ -132,6 +138,11 @@
         <header class="bg-light fixed-top shadow-sm">
             <div class="container py-3">
                 <div class="row">
+                    <div class="col-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+                        <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
+                        </svg>
+                    </div>
                     <div class="col-10 mx-auto text-center fw-lighter">
                         <p class="my-0 d-flex justify-content-between align-items-center"><span>Francisca Soto</span><span class="d-sm-none">|</span><span>Diseño UC</span></p>
                     </div>
@@ -140,6 +151,10 @@
         </header>
         <main class="mt-5 pt-5">
             <div class="container">
+                <div class="col-12">
+                    <h2 class="my-2 text-center">Gráficos y películas</h2>
+                </div>
+                <hr class="my-5">
                 <div class="row align-items-center">
                     <div class="col-lg-8 pe-5">
                         <h2>Highest grossing movies in history</h2>
@@ -166,11 +181,21 @@
                 </div>
             </div>
         </main>
+        <footer class="bg-light">
+            <hr>
+                <div class="container py-1">
+                    <div class="row">
+                        <div class="col-10 mx-auto text-center">
+                        <p> Clase 12 - 22 de Mayo 2024</p>
+                        </div>
+                    </div>
+                </div>
+        </footer>
         <script>
             new Chartist.Pie(
                 ".ct-chart1",
                 {
-                    labels: ["Acción", "Aventura", "Animación", "Biogrfía", "Crimen", "Drama", "Familia", "Horror", "Musical"],
+                    labels: ["Acción", "Aventura", "Animación", "Biografía", "Crimen", "Drama", "Familia", "Horror", "Musical"],
                     series: [13.681, 147.625, 81.77, 34.9, 42.8, 37.525, 75.5, 36.8, 66.2],
                 },
                 {
@@ -186,7 +211,7 @@
             new Chartist.Pie(
                 ".ct-chart2",
                 {
-                    labels: ["Acción", "Aventura", "Animación", "Biogrfía", "Crimen", "Drama", "Familia", "Horror", "Musical"],
+                    labels: ["Acción", "Aventura", "Animación", "Biografía", "Crimen", "Drama", "Familia", "Horror", "Musical"],
                     series: [1284.43, 754.125, 834.27, 286, 246, 879.75, 793, 441, 397],
                 },
                 {
